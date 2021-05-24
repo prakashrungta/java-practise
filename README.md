@@ -1,2 +1,2 @@
 # java-practise
- A Repository for Java Preparation
+ A new repo for java practise
