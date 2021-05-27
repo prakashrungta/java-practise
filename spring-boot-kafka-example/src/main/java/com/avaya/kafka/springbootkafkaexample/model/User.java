@@ -1,54 +1,49 @@
 package com.avaya.kafka.springbootkafkaexample.model;
 
-public class User
-{
-	public User(int id, String department, String name)
-	{
-		super();
-		this.id = id;
-		this.department = department;
-		this.name = name;
-	}
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity
+public class User {
 
-	public int getId()
-	{
+	private Long id;
+	private String name;
+	private String department;
+	private Integer salary;
+
+	@Id
+	@GeneratedValue
+	public Long getId() {
 		return id;
 	}
 
-
-	public void setId(int id)
-	{
+	public void setId(Long id) {
 		this.id = id;
 	}
 
-
-	public String getDepartment()
-	{
-		return department;
-	}
-
-
-	public void setDepartment(String department)
-	{
-		this.department = department;
-	}
-
-
-	public String getName()
-	{
+	public String getName() {
 		return name;
 	}
 
-
-	public void setName(String name)
-	{
+	public void setName(String name) {
 		this.name = name;
 	}
 
-	private int id;
+	public String getDepartment() {
+		return department;
+	}
 
-	private String department;
+	public void setDepartment(String department) {
+		this.department = department;
+	}
 
-	private String name;
+	public Integer getSalary() {
+		return salary;
+	}
+
+	public void setSalary(Integer salary) {
+		this.salary = salary;
+	}
+
 }
