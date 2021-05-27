@@ -12,6 +12,19 @@ public class User {
 	private String department;
 	private Integer salary;
 
+	public User(Long id, String name, String department, Integer salary) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.department = department;
+		this.salary = salary;
+	}
+
+	public User() {
+		super();
+
+	}
+
 	@Id
 	@GeneratedValue
 	public Long getId() {
