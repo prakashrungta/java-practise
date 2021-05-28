@@ -16,7 +16,6 @@ import com.avaya.kafka.springbootkafkaexample.repository.UserJpaRepository;
 @RestController
 @RequestMapping("users")
 public class UserController {
-
 	@Autowired
 	UserJpaRepository userJpaRepository;
 
@@ -27,16 +26,12 @@ public class UserController {
 
 	@GetMapping("/{name}")
 	public User findbyName(@PathVariable final String name) {
-
 		return userJpaRepository.findByName(name);
-
 	}
 
 	@PostMapping("/load")
 	public User load(@RequestBody final User user) {
-
 		userJpaRepository.save(user);
 		return userJpaRepository.findByName(user.getName());
-
 	}
 }

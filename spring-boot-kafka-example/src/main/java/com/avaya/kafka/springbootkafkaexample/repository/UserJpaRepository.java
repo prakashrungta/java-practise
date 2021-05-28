@@ -7,7 +7,5 @@ import com.avaya.kafka.springbootkafkaexample.model.User;
 
 @Component
 public interface UserJpaRepository extends JpaRepository<User, Long> {
-
 	User findByName(String name);
-
 }
