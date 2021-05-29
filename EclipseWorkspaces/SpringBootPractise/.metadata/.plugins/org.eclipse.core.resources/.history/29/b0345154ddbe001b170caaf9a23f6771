@@ -1,0 +1,6 @@
+package com.avaya.kafka.springbootkafkaexample.controller;
+
+@Component
+public interface UserJPARepository implements JPARepostory <User, Long>{
+
+}

@@ -1,0 +1,5 @@
+package com.avaya.kafka.springbootkafkaexample.resource;
+
+public class UserService {
+
+}

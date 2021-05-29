@@ -1,0 +1,8 @@
+package com.avaya.kafka.springbootkafkaexample.controller;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+@Component
+public interface UserJpaRepository extends JpaRepository <User, Long>{
+
+}
