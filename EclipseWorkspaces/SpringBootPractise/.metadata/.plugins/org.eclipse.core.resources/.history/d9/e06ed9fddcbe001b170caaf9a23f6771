@@ -1,5 +1,0 @@
-package com.avaya.kafka.springbootkafkaexample.controller;
-
-public interface userJPARepository {
-
-}

@@ -1,3 +1,0 @@
-server.port=8091
-jwt.secret=javainuse
-logging.level.org.springframework=debug  

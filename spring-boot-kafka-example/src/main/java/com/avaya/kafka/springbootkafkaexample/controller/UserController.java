@@ -23,6 +23,7 @@ public class UserController
 	@GetMapping("/all")
 	public List<User> findAll()
 	{
+		System.out.println("*****Called /all ");
 		return userJpaRepository.findAll();
 	}
 

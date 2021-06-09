@@ -1,6 +1,0 @@
-server.port=8443
-#logging.level.org.springframework=debug  
-server.ssl.key-alias=https-example
-server.ssl.key-store-type=JKS
-server.ssl.key-password=changeit
-server.ssl.key-store="C:\Users\prungta\Desktop\https-example.jks"
