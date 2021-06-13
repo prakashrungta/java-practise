@@ -16,7 +16,7 @@
  mvn compile jib:build
  
 #For running the Docker Images Locally
- docker run -d --name secureapp1 -p 8091:8091 prungta82/spring-boot-kafka-example
+docker run -d --name secureapp1 -p 8091:8091 prungta82/spring-boot-kafka-example
 
 #For various Rest Requests are as below
  GET  -->	https://localhost:8091/users/all
