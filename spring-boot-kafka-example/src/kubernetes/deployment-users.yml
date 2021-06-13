@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: users-service
+  labels:
+    run: users-service
+spec:
+  replicas: 2
+  selector:
+      matchLabels:
+        run: users-service
+  template:
+    metadata:
+      labels:
+        run: users-service
+    spec:
+      containers:
+      - name: users-service
+        image: prungta82/spring-boot-kafka-example
+        ports:
+        - containerPort: 8443
+          protocol: TCP  

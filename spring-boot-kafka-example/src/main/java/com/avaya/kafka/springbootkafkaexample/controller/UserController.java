@@ -20,10 +20,10 @@ public class UserController
 	@Autowired
 	UserJpaRepository userJpaRepository;
 
-	@GetMapping("/all")
+	@GetMapping("/")
 	public List<User> findAll()
 	{
-		System.out.println("*****Called /all ");
+		System.out.println("*****Called /users ****** ");
 		return userJpaRepository.findAll();
 	}
 
@@ -32,6 +32,7 @@ public class UserController
 	public User findbyName(@PathVariable
 	final String name)
 	{
+		System.out.println("*****Called /users/" + name + "/****** ");
 		return userJpaRepository.findByName(name);
 	}
 
@@ -40,6 +41,7 @@ public class UserController
 	public User load(@RequestBody
 	final User user)
 	{
+		System.out.println("*****Called /users/name ****** ");
 		userJpaRepository.save(user);
 		return userJpaRepository.findByName(user.getName());
 	}
